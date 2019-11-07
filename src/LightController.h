@@ -21,6 +21,7 @@ public:
   void updateLEDs();
   CRGB getLEDColor(int index);
   bool setLEDColor(CRGB color, int index, int brightness = NULL);
+  CRGB createNewColor(int r, int g, int b);
 };
 
 #endif

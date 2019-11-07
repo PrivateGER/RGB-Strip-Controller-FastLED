@@ -4,12 +4,13 @@
 #ifndef BOUNCING_PIXEL_CLASS_DEFINED
 #define BOUNCING_PIXEL_CLASS_DEFINED
 
-class BouncingPixel : public Effect {
-private: 
+class ColorDraw : public Effect {
+private:
 	int counter = 0;
 	bool forwards = true;
+	bool flick = false;
 public:
-	BouncingPixel(LightController& lightcontroller);
+	ColorDraw(LightController& lightcontroller);
 	void Tick();
 };
 

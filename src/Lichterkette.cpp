@@ -5,10 +5,10 @@
 #include "Arduino.h"
 #include "FastLED.h"
 #include "LightController.h"
-#include "Effects/BouncingPixel.h"
+#include "Effects/ColorDraw.h"
 
 LightController *lc = new LightController();
-BouncingPixel *bp = new BouncingPixel(*lc);
+ColorDraw *bp = new ColorDraw(*lc);
 
 void setup() {
     Serial.begin(9600);
@@ -18,7 +18,7 @@ void setup() {
       Serial.println(i);
     }*/
 
-
+    lc->blackAllLEDS();
 
     lc->updateLEDs();
 }

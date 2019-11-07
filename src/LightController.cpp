@@ -53,3 +53,11 @@ bool LightController::setLEDColor(CRGB color, int index, int brightness = NULL) 
 void LightController::updateLEDs() {
   FastLED.show();
 }
+
+CRGB LightController::createNewColor(int r, int g, int b) {
+  CRGB color = new CRGB();
+  color.r = r;
+  color.g = g;
+  color.b = b;
+  return color;
+}
