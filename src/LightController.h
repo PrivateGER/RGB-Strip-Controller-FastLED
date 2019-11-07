@@ -2,6 +2,7 @@
 #include <string.h>
 
 #ifndef LIGHTCONTROLLERCLASS
+#define LIGHTCONTROLLERCLASS
 
 #define LED_COUNT 32
 #define DATA_PIN 31

@@ -1,10 +1,12 @@
 #include <string.h>
+#include "../LightController.h"
 
 #ifndef EFFECT_BASE_CLASS
+#define EFFECT_BASE_CLASS
 
 class Effect {
-private:
-
+protected:
+  LightController *lc;
 public:
   int id = NULL;
 };
