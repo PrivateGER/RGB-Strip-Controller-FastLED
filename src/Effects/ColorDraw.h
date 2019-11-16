@@ -1,8 +1,8 @@
 #include "Effect.h"
 #include "../LightController.h"
 
-#ifndef BOUNCING_PIXEL_CLASS_DEFINED
-#define BOUNCING_PIXEL_CLASS_DEFINED
+#ifndef COLOR_DRAW_CLASS_DEFINED
+#define COLOR_DRAW_CLASS_DEFINED
 
 class ColorDraw : public Effect {
 private:

@@ -5,8 +5,8 @@
 #define LIGHTCONTROLLERCLASS
 
 #define LED_COUNT 32
-#define DATA_PIN 31
-#define CLOCK_PIN 33
+#define DATA_PIN 9
+#define CLOCK_PIN 5
 
 class LightController {
 private:

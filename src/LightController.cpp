@@ -3,7 +3,7 @@
 #include "Arduino.h"
 
 LightController::LightController() {
-  FastLED.addLeds<WS2801, DATA_PIN, CLOCK_PIN, RGB>(leds, ledCount).setCorrection(TypicalLEDStrip);
+  FastLED.addLeds<WS2801, DATA_PIN, CLOCK_PIN, RGB>(leds, ledCount).setCorrection(TypicalSMD5050);
 }
 
 int LightController::getLEDCount() {
@@ -55,9 +55,7 @@ void LightController::updateLEDs() {
 }
 
 CRGB LightController::createNewColor(int r, int g, int b) {
-  CRGB color = new CRGB();
-  color.r = r;
-  color.g = g;
-  color.b = b;
-  return color;
+  CRGB* color = new CRGB();
+  color->setRGB(r, g, b);
+  return *color;
 }

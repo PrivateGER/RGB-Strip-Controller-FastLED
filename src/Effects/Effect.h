@@ -9,6 +9,8 @@ protected:
   LightController *lc;
 public:
   int id = NULL;
+  void Tick();
+  void Reset();
 };
 
 #endif
